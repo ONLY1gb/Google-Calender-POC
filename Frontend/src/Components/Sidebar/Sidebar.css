@@ -1,0 +1,130 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #e2e2ff;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  border-right: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  border-radius: 0px 35px 35px 0px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #040c44;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: white;
+}
+
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+  color: #040c44;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.chat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #2a2a4a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-item:hover {
+  background-color: #4b3fbd;
+  color: #fff;
+}
+
+.chat-item.active {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.chat-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.chat-time {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Scrollbar styling */
+.chat-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+/* Sidebar footer styles */
+.sidebar-footer {
+  padding: 1rem;
+  /* border-top: 1px solid #333; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.genaiprotos-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+
+.genaiprotos-text {
+  /* height: 32px; */
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
