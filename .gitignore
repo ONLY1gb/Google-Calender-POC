@@ -2,3 +2,4 @@
 Backend/custom_gcal_tools.py
 Backend/token.json
 .env
+/Frontend/node_modules
